@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/2_led/led.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/2_led/led.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/2_led/led.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/2_led/led.mod.o

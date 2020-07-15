@@ -1,0 +1,6 @@
+KERNEL_DIR=/home/shun/linux/linux/linux-imx-rel_imx_4.1.15_2.1.0_ga_shun
+obj-m := hello_world.o
+all:
+	$(MAKE) -C $(KERNEL_DIR) M=$(CURDIR) modules
+clean:
+	$(MAKE) -C $(KERNEL_DIR) M=$(CURDIR) clean

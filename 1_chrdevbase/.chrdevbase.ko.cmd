@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/1_chrdevbase/chrdevbase.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/1_chrdevbase/chrdevbase.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/1_chrdevbase/chrdevbase.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/1_chrdevbase/chrdevbase.mod.o

@@ -1,0 +1,1 @@
+cmd_/home/shun/linux/driver/1_hello/hello_world.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/shun/linux/driver/1_hello/hello_world.ko /home/shun/linux/driver/1_hello/hello_world.o /home/shun/linux/driver/1_hello/hello_world.mod.o
