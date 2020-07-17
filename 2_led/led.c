@@ -91,14 +91,14 @@ static ssize_t led_read(struct file *filp, char __user *buf, size_t cnt, loff_t 
  * */
 static ssize_t led_write(struct file *filp, const char __user *buf, size_t cnt, loff_t *offt)
 {
-	int retvalue = 0;
+	int retvalue;
 	unsigned char databuf[1];
 	unsigned char ledstat;
 	
 	/* 接收用户空间传递给内核的数据  */
 	retvalue = copy_from_user(databuf, buf, cnt);
 
-	if(retvalue <= 0)
+	if(retvalue < 0)
 	{
 		printk("kernel write failed!\r\n");
 		return -EFAULT;
