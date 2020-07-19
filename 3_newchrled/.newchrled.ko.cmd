@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/3_newchrled/newchrled.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/3_newchrled/newchrled.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/3_newchrled/newchrled.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/3_newchrled/newchrled.mod.o
