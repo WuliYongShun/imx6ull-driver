@@ -1,0 +1,77 @@
+/ {
+	compatible = "fsl,imx6ull-shun-evk","fsl,imx6ull";
+	
+	// cpus节点
+	cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		
+		//CPU0节点
+		cpu0: cpu@0 {
+			compatible = "arm,cortex-a7";
+			device_type = "cpu";
+			reg = <0>;
+		};
+	};
+	
+	//soc节点
+	soc {
+		#address-cells = <1>;
+		#sieze-cells = <0>;
+		compatible = "simple-bus";
+		ranges;
+		
+		//ocram节点
+		ocram:sram@00900000 {
+			compatible = "fsl,lpm-sram";
+			reg = <0x00900000 0x2000>;
+		};
+		
+		//aips1节点
+		aips1: aips-bus@02000000 {
+			compatible = "fsl,aips-bus","simple-bus";
+			#address-cells = <1>;
+			#sieze-cells = <1>;
+			reg = <0x2000000 0x100000>;
+			ranges;
+			
+			//ecspi1节点
+			ecspi1：aips@02008000 {
+				#address-cells = <1>;
+				#size-cells = <0>;
+				reg = <0x2008000 0x4000>;
+				status = "disabled";
+			};
+		}
+		
+		//aips2节点
+		aips2: aips-bus@02100000 {
+			compatible = "fsl,aips-bus","simple-bus";
+			#address-cells = <1>;
+			#sieze-cells = <1>;
+			reg = <0x2100000 0x100000>;
+			ranges;
+			
+			usbotg1: usb@02184000 {
+				compatible = "fsl,imx6ul-usb","fsl,imx27-usb";
+				reg = <0x2184000 0x200>;
+				status = "disabled";
+			};
+		}
+		
+		//aips3节点
+		aips1: aips-bus@02200000 {
+			compatible = "fsl,aips-bus","simple-bus";
+			#address-cells = <1>;
+			#sieze-cells = <1>;
+			reg = <0x2200000 0x100000>;
+			ranges;
+			
+			//rngb节点
+			tngb: rngb02284000 {
+				compatible = "fsl,imx6sl-rng","fsl,imx-rng","imx-rng";
+				reg = <02284000 0x4000>;
+			};
+		}
+	}
+}
