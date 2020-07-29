@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/8_atomic/atomic.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/8_atomic/atomic.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/8_atomic/atomic.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/8_atomic/atomic.mod.o
