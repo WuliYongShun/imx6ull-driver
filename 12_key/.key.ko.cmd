@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/12_key/key.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/12_key/key.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/12_key/key.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/12_key/key.mod.o
