@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/13_timer/timer.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/13_timer/timer.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/13_timer/timer.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/13_timer/timer.mod.o
