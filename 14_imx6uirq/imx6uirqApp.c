@@ -5,6 +5,7 @@
 #include "fcntl.h"
 #include "stdlib.h"
 #include "string.h"
+#include "linux/ioctl.h"
 
 /* 定义按键值 */
 #define KEY0VALUE   0XF0
@@ -17,7 +18,7 @@ int main(int argc, char *argv[])
 {
     int fd, ret;
     char *filename;
-    unsigned char keyvalue;
+    unsigned char data;
 
     if(argc != 2){
         printf("Error Usage!\r\n");
@@ -37,14 +38,25 @@ int main(int argc, char *argv[])
     /* 循环读取按键值数据 */
     while (1)
     {
-        read(fd, &keyvalue, sizeof(keyvalue));
+        ret = read(fd, &data, sizeof(data));
 
-        if (keyvalue == KEY0VALUE)
+        if (ret < 0)
         {
-            printf("KEY0 Press, value = %#X\r\n", keyvalue);/* 按下 */
+            /* code */
         }
-        
+
+        /* 数据读取正常 */
+        else
+        {
+            if (data)
+            {
+                /* 打印读取到数据 */
+                printf("key value = %#X\r\n", data);
+            }
+            
+        }
     }
+
 
     ret = close(fd);
 
