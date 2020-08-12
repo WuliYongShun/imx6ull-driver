@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/16_noblockio/noblockio.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/16_noblockio/noblockio.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/16_noblockio/noblockio.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/16_noblockio/noblockio.mod.o
