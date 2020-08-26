@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/18_paltform/leddevice.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/18_paltform/leddevice.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/18_paltform/leddevice.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/18_paltform/leddevice.mod.o

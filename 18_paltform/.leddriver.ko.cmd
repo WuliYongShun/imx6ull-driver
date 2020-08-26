@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/18_paltform/leddriver.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/18_paltform/leddriver.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/18_paltform/leddriver.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/18_paltform/leddriver.mod.o
