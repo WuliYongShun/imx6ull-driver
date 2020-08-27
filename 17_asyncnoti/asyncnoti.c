@@ -117,7 +117,7 @@ void timer_function(unsigned long arg)
         atomic_set(&dev->releasekey, 1);
     }
 
-    if (atomic_rad(&dev->releasekey))
+    if (atomic_read(&dev->releasekey))
     {
         /* 一次完整的按键过程 */
         if (atomic_read(&dev->releasekey))
@@ -332,7 +332,7 @@ static struct file_operations imx6uirq_fops =
     .open = imx6uirq_open,
     .read = imx6uirq_read,
     .poll = imx6uirq_poll,
-    .fasync = imx6uirq_fasync;
+    .fasync = imx6uirq_fasync,
     .release = imx6uirq_release,
 };
 

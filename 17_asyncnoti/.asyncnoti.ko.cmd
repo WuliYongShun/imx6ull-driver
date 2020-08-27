@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/17_asyncnoti/asyncnoti.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/17_asyncnoti/asyncnoti.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/17_asyncnoti/asyncnoti.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/17_asyncnoti/asyncnoti.mod.o

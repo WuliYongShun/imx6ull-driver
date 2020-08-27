@@ -45,7 +45,7 @@ static void sigio_signal_func(int signum)
  */
 int main(int argc, char *argv[])
 {
-    int fd, ret;
+    int flags;
     char *filename;
  
     if(argc != 2){
@@ -82,9 +82,9 @@ int main(int argc, char *argv[])
     }
 
 
-    ret = close(fd);
+    flags = close(fd);
 
-    if (ret < 0)
+    if (flags < 0)
     {
         printf("file %s close failed!\r\n", argv[1]);
         return -1;
