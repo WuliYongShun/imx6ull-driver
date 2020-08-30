@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/EmbeddedDevelopment/linux/driver/20_miscbeep/miscbeep.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /mnt/hgfs/EmbeddedDevelopment/linux/driver/20_miscbeep/miscbeep.ko /mnt/hgfs/EmbeddedDevelopment/linux/driver/20_miscbeep/miscbeep.o /mnt/hgfs/EmbeddedDevelopment/linux/driver/20_miscbeep/miscbeep.mod.o

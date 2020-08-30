@@ -23,8 +23,8 @@
 
 #define LEDDEV_CNT		1				/* 设备号长度 	*/
 #define LEDDEV_NAME		"dtsplatled"	/* 设备名字 	*/
-#define LEDOFF 			0
-#define LEDON 			1
+#define LEDOFF 			1
+#define LEDON 			0
 
 
 /* leddev设备结构体 */
